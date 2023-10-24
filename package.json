@@ -1,0 +1,20 @@
+{
+  "name": "iitenki-project",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev index.ts",
+    "deploy": "wrangler deploy --minify index.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231016.0",
+    "bun-types": "latest",
+    "wrangler": "^3.14.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "hono": "^3.8.3"
+  }
+}
